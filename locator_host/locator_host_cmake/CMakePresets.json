@@ -1,0 +1,35 @@
+{
+    "version": 6,
+    "cmakeMinimumRequired": {
+      "major": 3,
+      "minor": 25,
+      "patch": 0
+    },
+    "configurePresets": [
+      {
+        "name": "project",
+        "displayName": "Configure locator_host",
+        "generator": "Ninja Multi-Config",
+        "binaryDir": "${sourceDir}/../build",
+        "toolchainFile": "${sourceDir}/toolchain.cmake"
+      }
+    ],
+    "buildPresets": [
+      {
+        "name": "default_config",
+        "displayName": "Build locator_host",
+        "configurePreset": "project",
+        "configuration": "Debug",
+        "targets": ["locator_host"]
+      }
+    ],
+    "workflowPresets": [
+      {
+        "name": "project",
+        "steps": [
+          {"type": "configure", "name": "project"},
+          {"type": "build", "name": "default_config"}
+        ]
+      }
+    ]
+  }
