@@ -1,19 +1,4 @@
 # Angle of Arrival locator project
-- [Angle of Arrival locator project](#angle-of-arrival-locator-project)
-  - [Overview](#overview)
-    - [NCP firmware](#ncp-firmware)
-    - [Host firmware](#host-firmware)
-  - [Hardware requirements](#hardware-requirements)
-  - [Software dependencies](#software-dependencies)
-    - [Build with CMAKE](#build-with-cmake)
-    - [Build with Makefile](#build-with-makefile)
-    - [Build with Docker](#build-with-docker)
-      - [Requirements](#requirements)
-      - [How to build the docker image](#how-to-build-the-docker-image)
-  - [How to use the project](#how-to-use-the-project)
-    - [Network setup](#network-setup)
-    - [MQTT usage](#mqtt-usage)
-  - [Disclaimer](#disclaimer)
 
 ## Overview
 The system contains 2 MCUs an EFR32xG24 (aka host) and an EFR32BG22 antenna array (aka NCP).
